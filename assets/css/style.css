@@ -27,6 +27,17 @@
     font-weight: 300;
 }
 
+.header__navbar-item:hover,
+.header__navbar-item-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.header__navbar-icon-link {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
 .header__navbar-item--bold{
     font-weight: 500;
 }
@@ -36,8 +47,8 @@
     display: block;
     position: absolute;
     width: 1px;
-    height: 12px;
+    height: 16px;
     background-color: #FB9086;
     right: -9px;
-    top: 2px;
+    top: 0px;
 }
