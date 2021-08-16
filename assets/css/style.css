@@ -1,5 +1,5 @@
 .header { 
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
 }
 
@@ -8,11 +8,13 @@
 .header__navbar{
     display: flex;
     justify-content: space-between;
+    height: var(--navbar-height);
 }
 
 .header__navbar-list{
     list-style: none;
     padding-left: 0;
+    margin: 4px 0 0 0;
 }
 
 .header__navbar-item{
@@ -249,6 +251,9 @@
 /* Auth Form */
 .auth-form{
     width: 500px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .auth-form__container {
@@ -259,6 +264,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 12px;
+    margin-top: 10px;
 }
 
 .auth-form__heading {
@@ -275,6 +282,7 @@
 }
 
 .auth-form__form {
+
 }
 
 .auth-form__input {
@@ -309,4 +317,109 @@
 
 .auth-form__control {
     margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__control-back{
+    margin-right: 8px;
+}
+
+.auth-form__socials {
+    background-color: #e4e1e1;
+    padding: 16px 36px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.auth-form__socials-icon {
+    font-size: 1.8rem;
+}
+
+.auth-form__socials-fb {
+    background-color: #3A5A98;
+    color: var(--white-color);
+}
+
+.auth-form__socials-gg {
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+
+.auth-form__socials-fb-text {
+    margin: 0 35px;
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__hepl-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.auth-form__help--space {
+    display: block;
+    height: 22px;
+    border-left: 1px solid #EAEAEA;
+    margin: -4px 16px;
+}
+
+.auth-form__help-forgot{
+    color: var(--primary-color);
+}
+
+.auth-form__help-need {
+    color: #939393;
+}
+
+/* header with search */
+
+.header-with-search {
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+}
+
+.header__logo{
+    width: 200px;
+}
+
+.header__logo-img {
+    width: 150px;
+}
+
+.header__search {
+    height: 40px;
+    flex: 1;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.header__search-input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 0 16px;
+    border-radius: 3px;
+}
+
+.header__cart {
+    width: 150px;
+    text-align: center;
+}
+
+.header__cart-icon {
+    font-size: 2.4rem;
+    color: var(--white-color);
+    margin-top: 10px;
 }
