@@ -128,5 +128,7 @@
         display: block;
     }
 
-    
+    .footer__content {
+        padding: 0 16px;
+    }
 }
